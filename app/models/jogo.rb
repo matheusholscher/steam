@@ -7,7 +7,8 @@ class Jogo < ApplicationRecord
    
 
     scope :por_titulo, lambda { |titulo = nil|
+    
             where(titulo: titulo) if titulo
     }
-    
+
 end
